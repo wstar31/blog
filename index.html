@@ -415,6 +415,22 @@
       font-weight: 700;
     }
 
+    .step-shot {
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(31, 41, 55, 0.08);
+      box-shadow: 0 10px 24px rgba(31, 41, 55, 0.05);
+    }
+
+    .step-shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+    }
+
     .footer {
       padding: 50px 0 80px;
       text-align: center;
@@ -614,10 +630,22 @@ Model Name</code></pre>
         <h3>3. 基本配置思路</h3>
         <p>不同版本的 Claude Code Switch 具体界面或命令可能不完全一样，但整体配置思路基本类似。</p>
         <div class="flow">
-          <div>第一步：安装或打开 Claude Code Switch并添加一个模型配置</div>
-          <div>第二步：新增一个模型配置，如果选项里有你已经购买过token，给你提供了api接口的供应商，直接选对应的就行，我这里用的gpt所以自定义配置</div>
-          <div>第三步：填写 API Key、请求地址（提供api接口的网址）和模型名称</div>
-          <div>第四步：点开高级选项点击获取模型列表，其他保持默认即可</div>
+          <div>
+            第一步：安装或打开 Claude Code Switch并添加一个模型配置
+            <div class="step-shot"><img src="./1.png" alt="Claude Code Switch 首页示意图"></div>
+          </div>
+          <div>
+            第二步：新增一个模型配置，如果选项里有你已经购买过token，给你提供了api接口的供应商，直接选对应的就行，我这里用的gpt所以自定义配置
+            <div class="step-shot"><img src="./2.png" alt="添加供应商示意图"></div>
+          </div>
+          <div>
+            第三步：填写 API Key、请求地址（提供api接口的网址）和模型名称
+            <div class="step-shot"><img src="./3.png" alt="编辑供应商示意图"></div>
+          </div>
+          <div>
+            第四步：点开高级选项点击获取模型列表，其他保持默认即可
+            <div class="step-shot"><img src="./4.png" alt="高级选项示意图"></div>
+          </div>
           <div>第五步：重新启动 Claude Code 并测试</div>
         </div>
         <p>如果是配置文件形式，通常会看到类似这样的字段：</p>
